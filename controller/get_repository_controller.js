@@ -23,7 +23,7 @@ class GetRepositoryController {
       request(options, function (err, response) {
         if (err || response.statusCode != 200) {
           console.log('Error :', response.statusCode, err);
-          return res.sendStatus(response.statusCode);
+          return res.status(404).json({error: 'Organisation not found'})
         }
         else {
           console.log('statusCode:', response.statusCode);
