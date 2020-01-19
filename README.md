@@ -5,9 +5,9 @@ stars.
 
 #### How to Run
 
-Clone this to your system by 'git clone https://github.com/kishorgec/verloop.git'
+Clone this to your system by 'git clone https://github.com/kishorgec/github-starcount-api.git'
 
-Make sure you have the latest Node JS and NPM installed.
+Make sure that you have the latest Node JS and NPM installed.
 
 Open terminal and type 'npm install && DEBUG=verloop:* npm start'
 
