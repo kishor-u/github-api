@@ -1,0 +1,30 @@
+{
+  "name": "github-starcount-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http": "0.0.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "request": "^2.88.0"
+  },
+  "description": "The API written in Node Js will returns top 3 repositories of an organisation in Github by its stars.",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kishorgec/github-startcount-api.git"
+  },
+  "author": "Kishor U",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kishorgec/github-startcount-api/issues"
+  },
+  "homepage": "https://github.com/kishorgec/github-startcount-api#readme"
+}
