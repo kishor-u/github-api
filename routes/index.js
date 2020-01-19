@@ -5,7 +5,7 @@ const router = express.Router();
 const GetStarRepositoryController = require('../controller/get_repository_controller')
 
 router.get('/repos', function (req, res, next) {
-  res.send('Invalid API. Please use POST /repos method');
+  res.status(405).json({error: 'Invalid API. Please use POST /repos method'});
 });
 
 /* Resolving the success request */

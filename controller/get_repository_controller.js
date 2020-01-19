@@ -9,7 +9,7 @@ class GetRepositoryController {
     console.log("\nOrg param received: ", req.body.org);
     const organisation = req.body.org;
     if (!organisation) {
-      return res.send('Please sepcify the org name as JSON in request body');
+      return res.status(400).json({error: 'Please specify the org name as JSON in request body'});
     }
 
     function loop() {
