@@ -42,7 +42,7 @@ class GetRepositoryController {
                 }
               );
             }
-            return res.send(formattedResponse);
+            return res.json(formattedResponse);
           }
           else {
             console.log("Final array length", finalJsonArray.length);

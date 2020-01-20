@@ -9,7 +9,7 @@ stars.
 
 - Make sure that you have the latest _Node JS (12+)_ and _NPM_ installed.
 
-- Open terminal and type `npm install && DEBUG=verloop:* npm start`
+- Open terminal and type `npm install && DEBUG=github-starcount-api:* npm start`
 
 - Your API server will be listening at port `7000`.
 

@@ -2,6 +2,7 @@
 const express = require('express');
 const request = require('request');
 const router = express.Router();
+var cache = require('./../controller/cache.js');
 const GetStarRepositoryController = require('../controller/get_repository_controller')
 
 router.get('/repos', function (req, res, next) {
@@ -9,7 +10,7 @@ router.get('/repos', function (req, res, next) {
 });
 
 /* Resolving the success request */
-router.post('/repos', function (req, res, next) {
+router.post('/repos', cache(20), function (req, res, next) {
   GetStarRepositoryController.getTopStarRepoCount(req, res);
 });
 
