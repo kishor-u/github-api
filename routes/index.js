@@ -2,7 +2,7 @@
 const express = require('express');
 const request = require('request');
 const router = express.Router();
-var cache = require('./../controller/cache.js');
+var cache = require('../controller/cache_controller');
 const GetStarRepositoryController = require('../controller/get_repository_controller')
 
 router.get('/repos', function (req, res, next) {

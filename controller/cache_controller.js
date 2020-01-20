@@ -5,13 +5,13 @@ var cache = (duration) => {
     let key = '__express__' + req.body.org
     let cachedBody = mcache.get(key)
     if (cachedBody) {
-      res.send(cachedBody)
+      res.json(JSON.parse(cachedBody));
       return
     } else {
       res.sendResponse = res.send
       res.send = (body) => {
         mcache.put(key, body, duration * 1000);
-        res.sendResponse(body)
+        res.sendResponse(body);
       }
       next()
     }
