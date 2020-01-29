@@ -14,3 +14,17 @@ stars.
 - Your API server will be listening at port `7000`.
 
 - Try sending the org name in json as body of POST request to fetch the details. `{"org": "github-organization-id"}`
+
+#### Dockerized Setup
+
+Dockerized setup is much classier than manual setup. To achieve this you just have to do this:-
+
+```shell
+docker build -t githubstarcountapi:latest -f Dockerfile .
+```
+
+That's it. Now just go and deploy the docker image anywhere you want.
+
+```shell
+docker run -d -p 7000:7000 githubstarcountapi
+```
