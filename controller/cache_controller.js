@@ -2,7 +2,7 @@ var mcache = require('memory-cache');
 
 var cache = (duration) => {
   return (req, res, next) => {
-    let key = '__express__' + req.body.org
+    let key = '__github__' + req.body.org
     let cachedBody = mcache.get(key)
     if (cachedBody) {
       res.json(JSON.parse(cachedBody));
